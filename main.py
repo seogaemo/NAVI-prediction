@@ -51,7 +51,7 @@ def detect():
 
     print(annos)
 
-    return jsonify(annos)
+    return jsonify({"predictions": annos})
 
 
 if __name__ == "__main__":
