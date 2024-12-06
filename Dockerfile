@@ -1,6 +1,6 @@
-# FROM ultralytics/yolov5:latest 
-# FROM ultralytics/yolov5:latest-cpu
-FROM ultralytics/yolov5:latest-arm64
+ARG ARCH
+
+FROM ultralytics/yolov5:latest${ARCH}
 
 ENV TZ Asia/Seoul
 ENV PYTHONIOENCODING UTF-8
